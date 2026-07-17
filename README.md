@@ -20,35 +20,45 @@ This project is structured in 9 phases:
 8. [x] Runtime Support & Optimizations
 9. [x] Verification, Documentation, & Finalization
 
-## Installation
+## Installation & Building
 
 ### Prerequisites
-- GCC (GNU Compiler Collection)
-- Make
+- GCC (GNU Compiler Collection) must be installed and in your system PATH.
+- `make` must be installed.
 
-### Building the Project
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mericthecoder/LUA-JIT.git
-   cd LUA-JIT
-   ```
-2. Build the project:
-   ```bash
-   make
-   ```
+### Build Instructions
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/mericthecoder/LUA-JIT.git
+    cd LUA-JIT
+    ```
+
+2.  **Compile the project:**
+    Simply run `make` in the root directory:
+    ```bash
+    make
+    ```
+    This will compile all source files in the `src/` directory and generate the `luajit_dev` executable.
+
+### Manual Compilation (Alternative)
+If you do not have `make`, you can compile manually using GCC:
+```bash
+gcc -Iinclude src/*.c -o luajit_dev
+```
 
 ## Usage
-After building, run the generated executable:
+
+After successfully building the project, execute the compiler:
+
 ```bash
 ./luajit_dev
 ```
 
 ## Contributing
-Contributions are welcome! Please check the issues tracker for tasks.
+
+Contributions are welcome! Please feel free to submit pull requests or open issues for bugs, feature requests, or improvements.
 
 ## Status
+
 Project development finalized.
-
-## Contributing
-
-Contributions are welcome! Please check the issues tracker for tasks.
