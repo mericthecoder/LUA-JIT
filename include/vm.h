@@ -2,12 +2,13 @@
 #define LUAJIT_VM_H
 
 #include "compiler.h"
+#include "profiler.h"
 
 typedef enum {
     INTERPRET_OK,
     INTERPRET_RUNTIME_ERROR
 } InterpretResult;
 
-InterpretResult interpret(BytecodeChunk* chunk);
+InterpretResult interpret(BytecodeChunk* chunk, Profiler* profiler);
 
 #endif

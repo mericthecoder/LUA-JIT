@@ -21,24 +21,21 @@ This project is structured in 9 phases:
 2. [x] Frontend (Lexer & Parser)
 3. [x] Bytecode Generation
 4. [x] Interpreter (VM)
-5. [ ] Profiler & Trace Collector
-6. [ ] Trace JIT Compiler (Frontend)
+5. [x] Profiler & Trace Collector
+6. [x] Trace JIT Compiler (Frontend)
 7. [ ] Machine Code Generation (Backend)
 8. [ ] Runtime Support & Optimizations
 9. [ ] Verification, Documentation, & Finalization
 
 ## Current Status
 
-We have completed Phase 4: Interpreter (VM). 
+We have completed Phase 6: Trace JIT Compiler (Frontend). 
 
 ### Updates
-- Structured project with `src/` and `include/` directories.
-- Implemented basic Lexer.
-- Implemented basic Parser and AST.
-- Defined bytecode instruction set (`include/opcode.h`).
-- Implemented basic compiler to emit bytecode (`src/compiler.c`).
-- Implemented bytecode interpreter (`src/vm.c`).
-- Added initial test driver (`src/main.c`).
+- Implemented Profiler to detect hot code paths.
+- Defined IR structure (SSA based).
+- Implemented Trace-to-IR converter for JIT frontend.
+- VM now triggers JIT on hot paths.
 
 ## Contributing
 

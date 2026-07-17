@@ -1,8 +1,14 @@
 #include "../include/vm.h"
+#include "../include/jit_frontend.h"
 #include <stdio.h>
 
-InterpretResult interpret(BytecodeChunk* chunk) {
+InterpretResult interpret(BytecodeChunk* chunk, Profiler* profiler) {
     for (int i = 0; i < chunk->count; i++) {
+        if (recordExecution(profiler, i)) {
+            printf("Hot path detected at PC: %d\n", i);
+            compileTraceToIR(chunk, i);
+        }
+        
         Instruction instruction = chunk->code[i];
         switch (instruction.code) {
             case OP_LOAD_CONST:
