@@ -29,7 +29,10 @@ This project is structured in 9 phases:
 
 ## Current Status
 
-We are currently finishing Phase 1. Development is ongoing.
+We are currently working on Phase 2: Frontend (Lexer & Parser). 
+
+### Updates
+- Structured project with `src/` and `include/` directories.
 
 ## Contributing
 
