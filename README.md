@@ -18,7 +18,7 @@ Lua is a powerful, efficient, lightweight, embeddable scripting language. This p
 This project is structured in 9 phases:
 
 1. [x] Architecture & Project Setup
-2. [ ] Frontend (Lexer & Parser)
+2. [x] Frontend (Lexer & Parser)
 3. [ ] Bytecode Generation
 4. [ ] Interpreter (VM)
 5. [ ] Profiler & Trace Collector
@@ -29,10 +29,12 @@ This project is structured in 9 phases:
 
 ## Current Status
 
-We are currently working on Phase 2: Frontend (Lexer & Parser). 
+We have completed Phase 2: Frontend (Lexer & Parser). 
 
 ### Updates
 - Structured project with `src/` and `include/` directories.
+- Implemented basic Lexer.
+- Implemented basic Parser and AST.
 
 ## Contributing
 
