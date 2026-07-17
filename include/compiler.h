@@ -11,6 +11,7 @@ typedef struct {
 } BytecodeChunk;
 
 void initChunk(BytecodeChunk* chunk);
+void writeChunk(BytecodeChunk* chunk, Instruction instruction);
 void compile(ASTNode* ast, BytecodeChunk* chunk);
 void freeChunk(BytecodeChunk* chunk);
 

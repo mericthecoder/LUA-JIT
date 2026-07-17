@@ -7,7 +7,7 @@ void initChunk(BytecodeChunk* chunk) {
     chunk->capacity = 0;
 }
 
-static void writeChunk(BytecodeChunk* chunk, Instruction instruction) {
+void writeChunk(BytecodeChunk* chunk, Instruction instruction) {
     if (chunk->capacity < chunk->count + 1) {
         int oldCapacity = chunk->capacity;
         chunk->capacity = oldCapacity < 8 ? 8 : oldCapacity * 2;
