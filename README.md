@@ -23,19 +23,17 @@ This project is structured in 9 phases:
 4. [x] Interpreter (VM)
 5. [x] Profiler & Trace Collector
 6. [x] Trace JIT Compiler (Frontend)
-7. [ ] Machine Code Generation (Backend)
+7. [x] Machine Code Generation (Backend)
 8. [ ] Runtime Support & Optimizations
 9. [ ] Verification, Documentation, & Finalization
 
 ## Current Status
 
-We have completed Phase 6: Trace JIT Compiler (Frontend). 
+We have completed Phase 7: Machine Code Generation (Backend). 
 
 ### Updates
-- Implemented Profiler to detect hot code paths.
-- Defined IR structure (SSA based).
-- Implemented Trace-to-IR converter for JIT frontend.
-- VM now triggers JIT on hot paths.
+- Defined Backend structures.
+- Implemented mock Backend emitter (`src/backend.c`) to demonstrate IR-to-machine-code mapping.
 
 ## Contributing
 
