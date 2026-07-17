@@ -24,16 +24,17 @@ This project is structured in 9 phases:
 5. [x] Profiler & Trace Collector
 6. [x] Trace JIT Compiler (Frontend)
 7. [x] Machine Code Generation (Backend)
-8. [ ] Runtime Support & Optimizations
+8. [x] Runtime Support & Optimizations
 9. [ ] Verification, Documentation, & Finalization
 
 ## Current Status
 
-We have completed Phase 7: Machine Code Generation (Backend). 
+We have completed Phase 8: Runtime Support & Optimizations. 
 
 ### Updates
-- Defined Backend structures.
-- Implemented mock Backend emitter (`src/backend.c`) to demonstrate IR-to-machine-code mapping.
+- Defined basic Object Model (`include/runtime.h`).
+- Implemented core Runtime primitives (`src/runtime.c`).
+- Added basic Optimizer structure (`src/optimizer.c`).
 
 ## Contributing
 
