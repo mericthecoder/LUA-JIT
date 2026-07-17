@@ -19,7 +19,7 @@ This project is structured in 9 phases:
 
 1. [x] Architecture & Project Setup
 2. [x] Frontend (Lexer & Parser)
-3. [ ] Bytecode Generation
+3. [x] Bytecode Generation
 4. [ ] Interpreter (VM)
 5. [ ] Profiler & Trace Collector
 6. [ ] Trace JIT Compiler (Frontend)
@@ -29,12 +29,14 @@ This project is structured in 9 phases:
 
 ## Current Status
 
-We have completed Phase 2: Frontend (Lexer & Parser). 
+We have completed Phase 3: Bytecode Generation. 
 
 ### Updates
 - Structured project with `src/` and `include/` directories.
 - Implemented basic Lexer.
 - Implemented basic Parser and AST.
+- Defined bytecode instruction set (`include/opcode.h`).
+- Implemented basic compiler to emit bytecode (`src/compiler.c`).
 
 ## Contributing
 
